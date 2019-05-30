@@ -23,4 +23,7 @@ class Show < ActiveRecord::Base
     rating_above_5 = []
     rating_above_5 << self.all.each {|show| show.where("rating > 5")}
     rating_above_5
+  end
+
+  
 end
