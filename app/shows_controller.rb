@@ -12,9 +12,9 @@ def can_be_created_with_a_hash_of_attributes
       day: "Sunday",
       rating: 5
   }
-  movie = Movie.new(attributes)
-  movie.save
-  movie
+  show = Show.new(attributes)
+  show.save
+  show
 end
 
 def can_be_created_in_a_block(args = {title: "Home Alone", release_date: 1990})
