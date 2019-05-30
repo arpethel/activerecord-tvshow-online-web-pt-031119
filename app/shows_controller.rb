@@ -9,7 +9,7 @@ def can_be_created_with_a_hash_of_attributes
       name: "The Name",
       network: "ABC",
       day: "Sunday",
-      rating: 5
+      rating: 5,
       season: 1
   }
   show = Show.new(attributes)
