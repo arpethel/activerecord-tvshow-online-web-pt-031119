@@ -20,9 +20,7 @@ class Show < ActiveRecord::Base
   end
 
   def self.popular_shows
-    rating_above_5 = []
-    rating_above_5 << self.all.each {|show| show.where("rating > ?", 5)}
-    rating_above_5
+    self.where("rating > ?", 5)
   end
 
 
